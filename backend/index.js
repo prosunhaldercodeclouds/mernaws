@@ -16,7 +16,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/uploads", express.static("Public"));
 
 
-app.use("/api/auth", AuthRoutes);
+app.use("/auth", AuthRoutes);
 
 app.get("/", (req, res) => {
     res.send("Hello World!");
