@@ -18,7 +18,7 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('http://localhost:8000/api/auth/login', form).then((response) => {
+    axios.post(`${process.env.REACT_APP_API_URL}/auth/login`, form).then((response) => {
       console.log('Login response:', response.data);
       localStorage.setItem('token', response.data.token);
       localStorage.setItem('user', JSON.stringify(response.data.user));
