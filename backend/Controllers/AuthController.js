@@ -3,6 +3,7 @@ const AuthService = require("../Services/AuthService");
 class AuthController {
     static async SignUp(req, res) {
         try {
+            console.log(req.body,"req.body")
             const result = await AuthService.SignUp(req.body);
             return res.status(201).json(result);
         } catch (err) {
