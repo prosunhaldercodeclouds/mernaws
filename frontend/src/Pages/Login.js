@@ -32,7 +32,7 @@ const Login = () => {
   return (
     <Container maxWidth="sm">
       <Box sx={{ mt: 8 }}>
-        <Typography variant="h4" gutterBottom>Login</Typography>
+        <Typography variant="h4" gutterBottom>Sign up</Typography>
         <form onSubmit={handleSubmit}>
           <TextField fullWidth margin="normal" label="Email" name="email" type="email" onChange={handleChange} required />
           <TextField fullWidth margin="normal" label="Password" name="password" type="password" onChange={handleChange} required />
